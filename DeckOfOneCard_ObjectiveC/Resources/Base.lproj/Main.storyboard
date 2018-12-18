@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZJL-ua-jMH">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="RKe-ib-iz7">
+            <objects>
+                <viewController id="ZJL-ua-jMH" customClass="CardViewController" customModule="DeckOfOneCard_ObjectiveC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bxg-AY-5nR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IA1-ap-L9l">
+                                <rect key="frame" x="74.666666666666686" y="249" width="226" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="314" id="2pr-Xx-Asr"/>
+                                    <constraint firstAttribute="width" constant="226" id="sKj-Us-vGj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywm-SR-Uoe">
+                                <rect key="frame" x="127.66666666666669" y="633" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RKE-Pu-F9g"/>
+                                    <constraint firstAttribute="width" constant="120" id="u8b-4h-SXE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Draw">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawButtonTapped:" destination="ZJL-ua-jMH" eventType="touchUpInside" id="qRC-8s-yhM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1855851411819458" green="0.53456509113311768" blue="0.20491522550582886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IA1-ap-L9l" firstAttribute="centerY" secondItem="Bxg-AY-5nR" secondAttribute="centerY" id="1Cm-fR-MWq"/>
+                            <constraint firstItem="Ywm-SR-Uoe" firstAttribute="top" secondItem="IA1-ap-L9l" secondAttribute="bottom" constant="70" id="6U0-Px-qzb"/>
+                            <constraint firstItem="Ywm-SR-Uoe" firstAttribute="centerX" secondItem="Bxg-AY-5nR" secondAttribute="centerX" id="Jzi-c3-5nS"/>
+                            <constraint firstItem="IA1-ap-L9l" firstAttribute="centerX" secondItem="Bxg-AY-5nR" secondAttribute="centerX" id="U64-hm-4Ww"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fAL-6V-twW"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="IA1-ap-L9l" id="teJ-n8-Myp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sE-kK-7lG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272.80000000000001" y="123.39901477832512"/>
+        </scene>
+    </scenes>
+</document>

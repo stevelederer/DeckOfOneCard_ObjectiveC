@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B79174321C9AFC300B254D5 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79174221C9AFC300B254D5 /* CardViewController.swift */; };
 		1BA22CCA21C99CB9006D4F24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22CC921C99CB9006D4F24 /* AppDelegate.m */; };
-		1BA22CCD21C99CB9006D4F24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22CCC21C99CB9006D4F24 /* ViewController.m */; };
 		1BA22CD021C99CB9006D4F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22CCE21C99CB9006D4F24 /* Main.storyboard */; };
 		1BA22CD221C99CBB006D4F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22CD121C99CBB006D4F24 /* Assets.xcassets */; };
 		1BA22CD521C99CBB006D4F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22CD321C99CBB006D4F24 /* LaunchScreen.storyboard */; };
 		1BA22CD821C99CBB006D4F24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22CD721C99CBB006D4F24 /* main.m */; };
+		1BD0C2E921C99D6D003B028F /* SHLCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0C2E821C99D6D003B028F /* SHLCard.m */; };
+		1BD0C2EC21C9A2C1003B028F /* SHLCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0C2EB21C9A2C1003B028F /* SHLCardController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B79174121C9AFB700B254D5 /* DeckOfOneCard_ObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfOneCard_ObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
+		1B79174221C9AFC300B254D5 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		1BA22CC521C99CB9006D4F24 /* DeckOfOneCard_ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard_ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA22CC821C99CB9006D4F24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BA22CC921C99CB9006D4F24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1BA22CCB21C99CB9006D4F24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1BA22CCC21C99CB9006D4F24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1BA22CCF21C99CB9006D4F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA22CD121C99CBB006D4F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA22CD421C99CBB006D4F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA22CD621C99CBB006D4F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA22CD721C99CBB006D4F24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BD0C2E721C99D6D003B028F /* SHLCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHLCard.h; sourceTree = "<group>"; };
+		1BD0C2E821C99D6D003B028F /* SHLCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHLCard.m; sourceTree = "<group>"; };
+		1BD0C2EA21C9A2C1003B028F /* SHLCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHLCardController.h; sourceTree = "<group>"; };
+		1BD0C2EB21C9A2C1003B028F /* SHLCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHLCardController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,53 @@
 		1BA22CC721C99CB9006D4F24 /* DeckOfOneCard_ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				1BD0C2E421C99CFD003B028F /* Model */,
+				1BD0C2E521C99D03003B028F /* Model Controller */,
+				1BD0C2E621C99D09003B028F /* View Controller */,
+				1BA22CDE21C99CD7006D4F24 /* Resources */,
+			);
+			path = DeckOfOneCard_ObjectiveC;
+			sourceTree = "<group>";
+		};
+		1BA22CDE21C99CD7006D4F24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1BA22CC821C99CB9006D4F24 /* AppDelegate.h */,
 				1BA22CC921C99CB9006D4F24 /* AppDelegate.m */,
-				1BA22CCB21C99CB9006D4F24 /* ViewController.h */,
-				1BA22CCC21C99CB9006D4F24 /* ViewController.m */,
 				1BA22CCE21C99CB9006D4F24 /* Main.storyboard */,
 				1BA22CD121C99CBB006D4F24 /* Assets.xcassets */,
 				1BA22CD321C99CBB006D4F24 /* LaunchScreen.storyboard */,
 				1BA22CD621C99CBB006D4F24 /* Info.plist */,
 				1BA22CD721C99CBB006D4F24 /* main.m */,
 			);
-			path = DeckOfOneCard_ObjectiveC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1BD0C2E421C99CFD003B028F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BD0C2E721C99D6D003B028F /* SHLCard.h */,
+				1BD0C2E821C99D6D003B028F /* SHLCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BD0C2E521C99D03003B028F /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BD0C2EA21C9A2C1003B028F /* SHLCardController.h */,
+				1BD0C2EB21C9A2C1003B028F /* SHLCardController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		1BD0C2E621C99D09003B028F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B79174121C9AFB700B254D5 /* DeckOfOneCard_ObjectiveC-Bridging-Header.h */,
+				1B79174221C9AFC300B254D5 /* CardViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +144,7 @@
 				TargetAttributes = {
 					1BA22CC421C99CB9006D4F24 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -141,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA22CCD21C99CB9006D4F24 /* ViewController.m in Sources */,
+				1BD0C2E921C99D6D003B028F /* SHLCard.m in Sources */,
 				1BA22CD821C99CBB006D4F24 /* main.m in Sources */,
 				1BA22CCA21C99CB9006D4F24 /* AppDelegate.m in Sources */,
+				1B79174321C9AFC300B254D5 /* CardViewController.swift in Sources */,
+				1BD0C2EC21C9A2C1003B028F /* SHLCardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +330,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56CLV9J785;
-				INFOPLIST_FILE = DeckOfOneCard_ObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard_ObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stevelederer.DeckOfOneCard-ObjectiveC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCard_ObjectiveC/View Controller/DeckOfOneCard_ObjectiveC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,15 +351,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56CLV9J785;
-				INFOPLIST_FILE = DeckOfOneCard_ObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard_ObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stevelederer.DeckOfOneCard-ObjectiveC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCard_ObjectiveC/View Controller/DeckOfOneCard_ObjectiveC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
